@@ -1,3 +1,4 @@
+# https://pt.wikibooks.org/wiki/Programar_em_C/Makefiles
 ########################################################################
 ####################### Makefile Template ##############################
 ########################################################################
@@ -30,10 +31,14 @@ WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 ########################################################################
 
 all: $(APPNAME)
-
+	
 # Builds the app
 $(APPNAME): $(OBJ)
+	@echo "Compiling"
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+	@echo "Compilation complete"
+	$(DEL) $(DEP)
+	.\$(APPNAME)
 
 # Creates the dependecy rules
 %.d: $(SRCDIR)/%$(EXT)
