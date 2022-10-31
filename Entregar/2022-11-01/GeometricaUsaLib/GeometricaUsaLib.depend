@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1667233660 source:e:\sistema\desktop\github\atp-2-tarefas\entregar\2022-11-01\geometricausalib\main.c
+	<stdio.h>
+	<stdlib.h>
+	"GeometricaLib.h"
+
+1667233482 e:\sistema\desktop\github\atp-2-tarefas\entregar\2022-11-01\geometricausalib\geometricalib.h
+
